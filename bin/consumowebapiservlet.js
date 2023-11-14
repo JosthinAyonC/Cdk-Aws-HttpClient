@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("aws-cdk-lib");
+const consumowebapiservlet_stack_1 = require("../lib/consumowebapiservlet-stack");
+const app = new cdk.App();
+new consumowebapiservlet_stack_1.ConsumowebapiservletStack(app, 'ConsumowebapiservletStack', {
+/* If you don't specify 'env', this stack will be environment-agnostic.
+ * Account/Region-dependent features and context lookups will not work,
+ * but a single synthesized template can be deployed anywhere. */
+/* Uncomment the next line to specialize this stack for the AWS Account
+ * and Region that are implied by the current CLI configuration. */
+// env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.CDK_DEFAULT_REGION },
+/* Uncomment the next line if you know exactly what Account and Region you
+ * want to deploy the stack to. */
+// env: { account: '123456789012', region: 'us-east-1' },
+/* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uc3Vtb3dlYmFwaXNlcnZsZXQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJjb25zdW1vd2ViYXBpc2VydmxldC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSx1Q0FBcUM7QUFDckMsbUNBQW1DO0FBQ25DLGtGQUE4RTtBQUU5RSxNQUFNLEdBQUcsR0FBRyxJQUFJLEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUMxQixJQUFJLHNEQUF5QixDQUFDLEdBQUcsRUFBRSwyQkFBMkIsRUFBRTtBQUM5RDs7aUVBRWlFO0FBRWpFO21FQUNtRTtBQUNuRSw2RkFBNkY7QUFFN0Y7a0NBQ2tDO0FBQ2xDLHlEQUF5RDtBQUV6RCw4RkFBOEY7Q0FDL0YsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiIyEvdXNyL2Jpbi9lbnYgbm9kZVxyXG5pbXBvcnQgJ3NvdXJjZS1tYXAtc3VwcG9ydC9yZWdpc3Rlcic7XHJcbmltcG9ydCAqIGFzIGNkayBmcm9tICdhd3MtY2RrLWxpYic7XHJcbmltcG9ydCB7IENvbnN1bW93ZWJhcGlzZXJ2bGV0U3RhY2sgfSBmcm9tICcuLi9saWIvY29uc3Vtb3dlYmFwaXNlcnZsZXQtc3RhY2snO1xyXG5cclxuY29uc3QgYXBwID0gbmV3IGNkay5BcHAoKTtcclxubmV3IENvbnN1bW93ZWJhcGlzZXJ2bGV0U3RhY2soYXBwLCAnQ29uc3Vtb3dlYmFwaXNlcnZsZXRTdGFjaycsIHtcclxuICAvKiBJZiB5b3UgZG9uJ3Qgc3BlY2lmeSAnZW52JywgdGhpcyBzdGFjayB3aWxsIGJlIGVudmlyb25tZW50LWFnbm9zdGljLlxyXG4gICAqIEFjY291bnQvUmVnaW9uLWRlcGVuZGVudCBmZWF0dXJlcyBhbmQgY29udGV4dCBsb29rdXBzIHdpbGwgbm90IHdvcmssXHJcbiAgICogYnV0IGEgc2luZ2xlIHN5bnRoZXNpemVkIHRlbXBsYXRlIGNhbiBiZSBkZXBsb3llZCBhbnl3aGVyZS4gKi9cclxuXHJcbiAgLyogVW5jb21tZW50IHRoZSBuZXh0IGxpbmUgdG8gc3BlY2lhbGl6ZSB0aGlzIHN0YWNrIGZvciB0aGUgQVdTIEFjY291bnRcclxuICAgKiBhbmQgUmVnaW9uIHRoYXQgYXJlIGltcGxpZWQgYnkgdGhlIGN1cnJlbnQgQ0xJIGNvbmZpZ3VyYXRpb24uICovXHJcbiAgLy8gZW52OiB7IGFjY291bnQ6IHByb2Nlc3MuZW52LkNES19ERUZBVUxUX0FDQ09VTlQsIHJlZ2lvbjogcHJvY2Vzcy5lbnYuQ0RLX0RFRkFVTFRfUkVHSU9OIH0sXHJcblxyXG4gIC8qIFVuY29tbWVudCB0aGUgbmV4dCBsaW5lIGlmIHlvdSBrbm93IGV4YWN0bHkgd2hhdCBBY2NvdW50IGFuZCBSZWdpb24geW91XHJcbiAgICogd2FudCB0byBkZXBsb3kgdGhlIHN0YWNrIHRvLiAqL1xyXG4gIC8vIGVudjogeyBhY2NvdW50OiAnMTIzNDU2Nzg5MDEyJywgcmVnaW9uOiAndXMtZWFzdC0xJyB9LFxyXG5cclxuICAvKiBGb3IgbW9yZSBpbmZvcm1hdGlvbiwgc2VlIGh0dHBzOi8vZG9jcy5hd3MuYW1hem9uLmNvbS9jZGsvbGF0ZXN0L2d1aWRlL2Vudmlyb25tZW50cy5odG1sICovXHJcbn0pOyJdfQ==
